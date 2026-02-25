@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demande de Devis Gratuit — ML Detailing | Nettoyage Automobile</title>
+  <meta name="description" content="Demandez votre devis gratuit pour un nettoyage automobile ou detailing. ML Detailing répond rapidement avec un prix juste et transparent. Zone Liège, Namur, Marche.">
+  <meta property="og:title" content="Devis Gratuit — ML Detailing">
+  <meta property="og:description" content="Obtenez votre devis personnalisé gratuit pour nettoyage automobile ou detailing. Réponse rapide, prix transparent.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mldetailing.be/devis.html">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">ML<span>.</span>Detailing</a>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="nettoyage.html">Nettoyage</a>
+    <a href="detailing.html">Detailing</a>
+    <a href="tarifs.html">Tarifs</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="contact.html">Contact</a>
+    <a href="devis.html" class="nav-cta active">Devis Gratuit &rarr;</a>
+  </div>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-mobile">
+  <a href="index.html">Accueil</a>
+  <a href="nettoyage.html">Nettoyage</a>
+  <a href="detailing.html">Detailing</a>
+  <a href="tarifs.html">Tarifs</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="contact.html">Contact</a>
+  <a href="devis.html" class="active">Devis Gratuit</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <span class="section-label">Sans engagement</span>
+    <h1>Demande de Devis Gratuit</h1>
+    <p>Décrivez votre véhicule et son état. Nous vous répondons rapidement avec un prix juste et transparent.</p>
+  </div>
+</div>
+
+<!-- DEVIS FORM -->
+<section>
+  <div class="container">
+    <div style="max-width:760px;margin:0 auto;">
+
+      <!-- Intro callout -->
+      <div class="callout" style="margin-bottom:2.5rem;" data-aos="fade-up">
+        <h3>Comment ça fonctionne ?</h3>
+        <p>Remplissez le formulaire ci-dessous avec les informations sur votre véhicule. Plus votre description est précise, plus notre estimation sera juste. Vous pouvez également nous envoyer des photos via WhatsApp pour un devis encore plus précis.</p>
+      </div>
+
+      <div class="form-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>Votre demande de devis</h3>
+        <div class="form-wrapper">
+          <form data-web3form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="ba868ed8-1796-456e-ba13-b7d0e0b4f2cf">
+            <input type="hidden" name="_to" value="ml.detailing@outlook.com">
+            <input type="hidden" name="subject" value="Nouvelle demande de devis — ML Detailing">
+            <input type="hidden" name="_template" value="table">
+            <input type="checkbox" name="botcheck" style="display:none;">
+
+            <!-- Nom / Prénom -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="devis-nom">Nom <span style="color:#5282FC;">*</span></label>
+                <input type="text" id="devis-nom" name="nom" placeholder="Votre nom" required>
+              </div>
+              <div class="form-group">
+                <label for="devis-prenom">Prénom <span style="color:#5282FC;">*</span></label>
+                <input type="text" id="devis-prenom" name="prenom" placeholder="Votre prénom" required>
+              </div>
+            </div>
+
+            <!-- Téléphone -->
+            <div class="form-group">
+              <label for="devis-tel">Téléphone <span style="color:#5282FC;">*</span></label>
+              <input type="tel" id="devis-tel" name="telephone" placeholder="04XX/XX.XX.XX" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="devis-email">Email <span style="color:#5282FC;">*</span></label>
+              <input type="email" id="devis-email" name="email" placeholder="votre@email.com" required>
+            </div>
+
+            <!-- Type de véhicule -->
+            <div class="form-group">
+              <label>Type de véhicule <span style="color:#5282FC;">*</span></label>
+              <div class="radio-group">
+                <label class="radio-option">
+                  <input type="radio" name="type_vehicule" value="Citadine" required>
+                  Citadine — 70 € HTVA
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="type_vehicule" value="Berline">
+                  Berline — 80 € HTVA
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="type_vehicule" value="SUV / 4x4 / Utilitaire">
+                  SUV / 4x4 / Utilitaire — 90 € HTVA
+                </label>
+              </div>
+            </div>
+
+            <!-- Prestation souhaitée -->
+            <div class="form-group">
+              <label>Prestation souhaitée</label>
+              <div class="checkbox-group">
+                <label class="checkbox-option">
+                  <input type="checkbox" name="prestation[]" value="Nettoyage classique">
+                  Nettoyage classique (intérieur + extérieur)
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="prestation[]" value="Detailing">
+                  Detailing (injection/extraction, décontamination, etc.)
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="prestation[]" value="Les deux">
+                  Les deux
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="prestation[]" value="Je ne sais pas encore">
+                  Je ne sais pas encore — j'ai besoin de conseils
+                </label>
+              </div>
+            </div>
+
+            <!-- État du véhicule -->
+            <div class="form-group">
+              <label for="devis-etat">État du véhicule</label>
+              <textarea
+                id="devis-etat"
+                name="etat_vehicule"
+                rows="5"
+                placeholder="Décrivez l'état de votre véhicule : taches, poils, odeurs, boue, traces incrustées, dernière intervention... Plus vous êtes précis, plus notre estimation sera juste."
+              ></textarea>
+            </div>
+
+            <!-- WhatsApp note -->
+            <div class="callout" style="margin-bottom:1.5rem;">
+              <h3>Envoyer des photos pour un devis plus précis</h3>
+              <p>Vous pouvez nous envoyer des photos de votre véhicule par WhatsApp au <strong style="color:#fff;">0479/72.32.58</strong> — intérieur, extérieur, zones à traiter. Cela nous permet de vous proposer une estimation encore plus précise et transparente.</p>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:1rem;padding:1rem;">Envoyer ma demande</button>
+            </div>
+
+            <p class="form-note" style="text-align:center;margin-top:1rem;">Devis gratuit et sans engagement. Réponse sous 24h en jours ouvrables.</p>
+
+          </form>
+
+          <div class="thank-you">
+            <div class="thank-you-icon">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#5282FC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Demande envoyée avec succes !</h3>
+            <p style="margin-bottom:1.5rem;">Merci pour votre demande de devis. Nous l'avons bien reçue et nous vous répondrons dans les meilleurs délais avec une estimation personnalisée.</p>
+            <p>N'hésitez pas à nous envoyer des photos de votre véhicule par WhatsApp au <strong style="color:#fff;">0479/72.32.58</strong> pour affiner l'estimation.</p>
+            <div style="margin-top:2rem;">
+              <a href="index.html" class="btn btn-ghost">Retour à l'accueil</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">ML<span>.</span>Detailing</div>
+        <p class="footer-desc">Nettoyage automobile professionnel et detailing premium en Belgique. Zone Liège, Namur, Marche-en-Famenne.</p>
+        <p style="font-size:0.78rem;color:rgba(223,223,223,0.25);">TVA : BE1023317039</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="nettoyage.html">Nettoyage Classique</a></li>
+          <li><a href="detailing.html">Detailing</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Zones</h4>
+        <ul>
+          <li><a href="liege.html">Liège</a></li>
+          <li><a href="namur.html">Namur</a></li>
+          <li><a href="marche.html">Marche-en-Famenne</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>0479/72.32.58</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>ml.detailing@outlook.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>Lun&ndash;Ven, 8h&ndash;18h</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 ML Detailing. Tous droits réservés.</p>
+      <p class="footer-tva">BE1023317039 &mdash; Rue d'Atrin 46, Liège</p>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:+32479722358" class="mobile-cta">Appeler le 0479/72.32.58</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+<script src="main.js" defer></script>
+</body>
+</html>
